@@ -1,0 +1,17 @@
+* {
+    font-family: 'Museo Sans Cyrl', sans-serif;;
+}
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+.button {
+    background-color: #c70101;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+@import './blocks/promo';
+@import './base/media';

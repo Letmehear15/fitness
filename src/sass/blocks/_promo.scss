@@ -1,0 +1,91 @@
+.promo {
+    background-image: url('../img/mainBG.jpg');
+    background-size: cover;
+    padding: 20px 0 90px 0;
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__official {
+            color: #fff;
+            font-size: 10px;
+            text-align: center;
+            span {
+                font-size: 18px;
+                font-weight: 700;
+                text-align: center;
+            }
+        }
+        &__contact {
+            display: flex;
+            flex-direction: column;
+            a {
+                color: #fff;
+                font-size: 18px;
+                text-align: center;
+                font-weight: 700;
+            }
+            .button {
+                padding: 7px 20px;
+                font-size: 12px;
+            }
+        }
+    }
+    .subheader {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-top: 90px;
+        &__title {
+            font-size: 39px;
+            color: #fff;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin: 0;
+        }
+        &__text {
+            color: #fff;
+            font-size: 22px;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+        &__adv {
+            display: flex;
+            margin-top: 70px;
+            .icon {
+                width: 110px;
+                margin-left: 70px;
+                color: #fff;
+                text-align: center;
+                font-size: 14px;
+                img {
+                    display: block;
+                    margin: auto;
+                    margin-bottom: 15px;
+                }
+            }
+        }
+        &__consultation {
+            margin-top: 70px;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 500;
+            text-align: right;
+            .button {
+                padding: 15px 45px;
+                font-size: 16px;
+                font-weight: 500;
+                text-align: center;
+                margin-bottom: 10px;
+            }
+            a {
+                display: inline;
+                color: #fff;
+                text-transform: uppercase;
+                font-size: 16px;
+                font-weight: 500;
+                text-decoration: underline;
+            }
+        }
+    }
+}
