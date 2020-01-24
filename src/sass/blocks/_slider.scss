@@ -1,0 +1,30 @@
+.slider {
+    position: relative;
+    padding: 87px 0 20px 0;
+    &__items {
+        width: 800px;
+        margin: 0 auto;
+        img {
+            width: 100%;
+        }
+    }
+    button {
+        border: none;
+        outline: none;
+    }
+    &__left {
+        display: block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        transform: translateX(-60px);
+    }
+    &__right {
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        transform: translateX(60px);
+    }
+}
