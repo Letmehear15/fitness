@@ -24,4 +24,50 @@ $(document).ready(function(){
    };
     scroll('.catalog__link');
     scroll('.catalog__back');
+
+    function valid(el) {
+        $(el).validate({
+            rules: {
+             name: 'required',
+             email: {
+                 required: true,
+                 email: true
+             },
+             phone: 'required'
+            },
+            messages: {
+             name: "Введите свое имя",
+             email: {
+                 required: 'Введите email',
+                 email: "Введите корректный email"
+             },
+             phone: {
+                 required: 'Введите номер телефона',
+                 phone: 'Введите корректный номер телефона'
+             }
+            }
+        })
+    }
+    $("input[name=phone]").mask("+7(999) 999-99-99");
+
+    valid('#consiltation');
+    valid('#callback');
+    valid("#order");
+
+    $('form').submit(function(e) {
+        e.preventDefault();
+        $.ajax({
+            type: 'post',
+            url: "./mailer/smart.php",
+            data: $(this).serialize()
+          }).done(function() {
+            $( this ).find('input').val('');
+
+
+            $('form').trigger('reset');
+          }).fail(function(){
+            alert('fail');
+          });
+          return false;
+    })
   });

@@ -26,6 +26,12 @@ form {
         border: none;
         border-radius: 5px;
     }
+    .error:not(input) {
+        color: #f54242;
+    }
+    input.error {
+        border: 2px solid #f54242;
+    }
 }
 @import './blocks/promo';
 @import './base/media';

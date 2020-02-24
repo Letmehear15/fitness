@@ -89,14 +89,14 @@
             <h2 class="consultation__title">получите бесплатную консультацию по подбору пульсометра</h2>
             <div class="consultation__descr"> Просто заполните форму заявки <br>
             и мы перезвоним вам в течении 10 минут</div>
-            <form action="#">
-                <input type="text" placeholder="Ваше имя">
+            <form id="consiltation" action="#">
+                <input name='name' type="text" placeholder="Ваше имя">
 
-                <input type="tel" placeholder=" Ваш телефон">
+                <input name='phone' type="tel" placeholder=" Ваш телефон">
 
-                <input type="email" placeholder=" Ваш Email">
+                <input name='email' type="email" placeholder=" Ваш Email">
 
-                <input type="submit" class="button order" value="заказать консультацию">
+                <input type="submit" class="button" value="заказать консультацию">
             </form>
         </div>
     </section>
@@ -161,7 +161,7 @@
                     <div class="catalog__wrapper">
                         <div class="catalog__content catalog__content_active">
                             <img src="./img/catalog.png" alt="catalog" class="catalog__img">
-                            <h3 class="catalog__name">Пульсометр Polar FT1</h3>
+                            <h3 class="catalog__name">Пульсометр Polar FT2</h3>
                             <div class="catalog__descr"> Для первых шагов в тренировках, основаных на сердечном ритме</div>
                             <a href="#" class="catalog__link">Подробнее</a>
                         </div>
@@ -194,7 +194,7 @@
                     <div class="catalog__wrapper">
                         <div class="catalog__content catalog__content_active">
                             <img src="./img/catalog.png" alt="catalog" class="catalog__img">
-                            <h3 class="catalog__name">Пульсометр Polar FT1</h3>
+                            <h3 class="catalog__name">Пульсометр Polar FT3</h3>
                             <div class="catalog__descr"> Для первых шагов в тренировках, основаных на сердечном ритме</div>
                             <a href="#" class="catalog__link">Подробнее</a>
                         </div>
@@ -227,7 +227,7 @@
                     <div class="catalog__wrapper">
                         <div class="catalog__content catalog__content_active">
                             <img src="./img/catalog.png" alt="catalog" class="catalog__img">
-                            <h3 class="catalog__name">Пульсометр Polar FT1</h3>
+                            <h3 class="catalog__name">Пульсометр Polar FT4</h3>
                             <div class="catalog__descr"> Для первых шагов в тренировках, основаных на сердечном ритме</div>
                             <a href="#" class="catalog__link">Подробнее</a>
                         </div>
@@ -496,10 +496,10 @@
                 <div class="modal__close">&times;</div>
                 <div class="modal__title">Просто заполните форму звявки</div>
                 <div class="modal__descr"> и мы перезвоним вам в течении 10 минут</div>
-                <form action="#">
-                    <input type="text" placeholder="Ваше имя">
-                    <input type="tel" placeholder=" Ваш телефон">
-                    <input type="email" placeholder=" Ваш Email">
+                <form id="callback" action="#">
+                    <input name='name' type="text" placeholder="Ваше имя">
+                    <input name='phone' type="tel" placeholder=" Ваш телефон">
+                    <input name='email' type="email" placeholder=" Ваш Email">
                     <input type="submit" class="button" value="заказать консультацию">
                 </form>
             </div>
@@ -507,10 +507,10 @@
                 <div class="modal__close">&times;</div>
                 <div class="modal__title">Ваш заказ</div>
                 <div class="modal__descr"> </div>
-                <form action="#">
-                    <input type="text" placeholder="Ваше имя">
-                    <input type="tel" placeholder=" Ваш телефон">
-                    <input type="email" placeholder=" Ваш Email">
+                <form id="order" action="#">
+                    <input name='name' type="text" placeholder="Ваше имя">
+                    <input name='phone' type="tel" placeholder=" Ваш телефон">
+                    <input name='email' type="email" placeholder=" Ваш Email">
                     <input type="submit" class="button" value="заказать консультацию">
                 </form>
             </div>
@@ -522,6 +522,8 @@
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/jquery.maskedinput.min.js"></script>
     <script src="./js/script.js"></script>
     <script src="./js/modal.js"></script>
 </body>
