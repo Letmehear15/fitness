@@ -27,5 +27,14 @@
             color: red;
         }
     }   
+    &__animate {
+        animation-name: heartBeating;
+        animation-iteration-count: infinite;
+        animation-duration: 1.3s;
+        &:hover {
+            animation-play-state: paused;
+        }
+    }
+
    
 }
